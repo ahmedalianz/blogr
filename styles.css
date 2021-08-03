@@ -1,61 +1,51 @@
 body {
-    font-family: 'Overpass',
-        sans-serif;
+    /* font-family: 'Overpass',
+        sans-serif; */
     font-family: 'Ubuntu',
         sans-serif;
     font-size: 16px;
     margin: 0;
+    line-height: 2.5;
+    background-color: rgb(255, 255, 255);
     text-transform: capitalize;
 }
 
-#container1 {
-    background-image: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-    min-height: 90vh;
-    border-radius: 0 0 0 35px;
-    -webkit-border-radius: 0 0 0 35px;
-    -moz-border-radius: 0 0 0 35px;
-    -ms-border-radius: 0 0 0 35px;
-    -o-border-radius: 0 0 0 35px;
+#landing {
+
+    background: url(images/bg-pattern-intro.svg), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: center;
+
+    min-height: 30rem;
+    background-size: cover;
+
+    border-radius: 0 0 0 3rem;
+    -webkit-border-radius: 0 0 0 3rem;
+    -moz-border-radius: 0 0 0 3rem;
+    -ms-border-radius: 0 0 0 3rem;
+    -o-border-radius: 0 0 0 3rem;
 }
 
-.header .row {
-
+#logo {
     color: rgb(255, 255, 255);
-    font-weight: 700;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 3.5rem 5rem;
-}
-
-@media screen and (max-width:425px) {
-    .header .row {
-        padding: 3.5rem 0;
-    }
-}
-
-
-.row div {
-    margin: 12px 15px;
-    padding: 0 20px
-}
-
-#blogr {
-    font-size: 40px;
     font-weight: 600;
-    line-height: 0.5;
+    padding-top: 1.3125rem;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+}
+
+#navbarDropdown {
+    color: white;
 }
 
 #sign {
     color: hsl(353, 100%, 62%);
     border-radius: 20px;
-    padding: 14px 0;
     line-height: 0.5;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.815);
     border: 2px white solid;
-
+    padding: 10px 30px;
+    margin: 0 17px;
 }
 
 #sign:hover {
@@ -63,69 +53,377 @@ body {
     background-color: hsl(355, 100%, 74%);
 }
 
-#login {
-    padding: 20px 10px;
+#log {
     line-height: 0.5;
     text-align: center;
     color: white;
+    border-radius: 20px;
+    border: 2px white solid;
+
+    padding: 10px 30px;
+    margin: 0 40px;
 }
 
-.landing .container-fluid {
+@media screen and (max-width:815px) and (min-width:768px) {
+    #sign {
+        margin: 0 -16px;
+    }
+
+    #log {
+
+        margin: 0 29px;
+    }
+}
+
+@media screen and (max-width:1027px) and (min-width:929px) {
+    #sign {
+        margin: 0 -16px;
+    }
+
+    #log {
+
+        margin: 0 29px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    #log {
+        line-height: 0.5;
+        text-align: center;
+        border-radius: 20px;
+        border: 2px white solid;
+        padding: 30px 60px;
+
+    }
+
+    #sign {
+        border-radius: 20px;
+        line-height: 0.5;
+        border: 2px white solid;
+        padding: 30px 60px;
+
+    }
+
+}
+
+@media screen and (max-width:515px) {
+    #log {
+        line-height: 0.5;
+        text-align: center;
+        border-radius: 20px;
+        border: 2px white solid;
+        padding: 18px 30px;
+
+    }
+
+    #sign {
+        border-radius: 20px;
+        line-height: 0.5;
+        border: 2px white solid;
+        padding: 18px 35px;
+
+    }
+
+}
+
+@media screen and (max-width:405px) {
+    #log {
+        line-height: 0.5;
+        text-align: center;
+        border-radius: 20px;
+        border: 2px white solid;
+        padding: 14px 18px;
+        margin: 10px 13px;
+    }
+
+    #sign {
+        border-radius: 20px;
+        line-height: 0.5;
+        border: 2px white solid;
+        padding: 14px 20px;
+        margin: 10px 13px;
+    }
+
+}
+
+
+
+#text {
     text-align: center;
     font-family: 'Overpass',
         sans-serif;
-
     color: white;
-    margin-top: 5%;
+    margin-top: 100px;
 }
 
-.landing .container-fluid h1 {
+#text h1 {
     font-size: 55px;
     font-weight: 600;
     text-transform: initial;
 }
 
-.landing .container-fluid span {
+#text a {
     margin: 10px 10px;
     border: 2px white solid;
-    background-color: transparent;
     padding: 10px 30px;
+    text-decoration: none;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    cursor: pointer;
     font-weight: 700;
-}
-
-@media screen and (max-width:375px) {
-    .landing .container-fluid span {
-
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .landing .container-fluid span {
-
-        margin: 10px 0px;
-        font-size: 11px;
-        padding: 10px 13px;
-    }
-}
-
-#empty {
-    cursor: unset;
 }
 
 #b1 {
     color: hsl(353, 100%, 62%);
-    left: 315px;
     background-color: rgba(255, 255, 255, 0.815);
 }
 
 #b1:hover {
     color: white;
     background-color: hsl(355, 100%, 74%);
+}
+
+#b2 {
+    color: white;
+}
+
+@media screen and (max-width:426px) {
+    #text a {
+        margin: 10px 3px;
+        padding: 10px 15px;
+
+    }
+
+}
+
+@media screen and (max-width:383px) {
+    #text a {
+        font-size: 15px;
+        margin: 10px 0;
+        padding: 10px 7px;
+    }
+
+    #text h1 {
+        font-size: 49px;
+    }
+}
+
+#design h1 {
+    text-align: center;
+    margin: 50px;
+    color: hsl(208, 49%, 24%);
+}
+
+#design h3 {
+    color: hsl(208, 49%, 24%);
+}
+
+#text2 {
+    width: 50vw;
+    display: inline-block;
+}
+
+
+
+#design {
+    min-height: 800px;
+}
+
+.boxingg {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 4px black
+}
+
+#design #image1 {
+    width: 40vw;
+    float: right;
+}
+
+@media screen and (max-width:920px) {
+    #design #image1 {
+        float: none;
+        width: 60vw;
+        display: block;
+        margin-left: 200px;
+    }
+
+    #text2 {
+        width: 80vw;
+        margin: 0 50px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    #design #image1 {
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width:417px) {
+        #text2 {
+            width: 80vw;
+            margin: 0 10px;
+        }
+
+    }
+}
+
+#back {
+    height: 60vh;
+    position: relative;
+    border-radius: 0 15% 0 15%;
+    -webkit-border-radius: 0 15% 0 15%;
+    -moz-border-radius: 0 15% 0 15%;
+    -ms-border-radius: 0 15% 0 15%;
+    -o-border-radius: 0 15% 0 15%;
+    background-image: url('images/bg-pattern-circles.svg'), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+}
+
+#text3 {
+    color: white;
+    width: 47vw;
+    float: right;
+    margin: 110px 70px 0 0;
+}
+
+#text3 h3 {
+    text-align: center;
+}
+
+#back img {
+    position: absolute;
+    top: -130px
+}
+
+@media screen and (max-width:1200px) {
+    #back img {
+        width: 40vw;
+        top: -130px
+    }
+}
+
+@media screen and (max-width:920px) {
+    #back {
+        margin-top: 75px;
+        height: 55vh;
+    }
+
+    #back img {
+        width: 40vw;
+        top: -80px
+    }
+
+    #text3 {
+        color: white;
+        width: 47vw;
+        float: right;
+        margin: 50px 40px 0 0;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    #back {
+        margin-top: 75px;
+        height: 88vh;
+    }
+
+    #text3 {
+        width: 77vw;
+
+        margin: 329px 54px 0 0;
+    }
+
+    #back img {
+        width: 58vw;
+        top: -80px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    #text3 {
+        width: 70vw;
+        margin: 253px 54px 0 0;
+    }
+
+    #back img {
+        width: 72vw;
+        top: -80px;
+        left: 34px;
+    }
+}
+
+@media screen and (max-width:344px) {
+    #text3 {
+        text-align: center;
+        margin: 164px 39px 0 0;
+    }
+
+    #back img {
+        width: 72vw;
+        top: -80px;
+        left: 34px;
+    }
+}
+
+@media screen and (min-width:2000px) {
+    body {
+        font-size: xx-large;
+    }
+
+    #logo {
+        padding-left: 26.5rem;
+        font-size: 100px;
+    }
+
+    form {
+        padding-left: 264px;
+    }
+
+    #text {
+        font-size: 54px
+    }
+
+    #text h1 {
+        font-size: 76px;
+    }
+
+    #text a {
+        padding: 40px 40px;
+    }
+
+    #sign,
+    #log {
+        font-size: 34px;
+        padding: 40px 40px
+    }
+
+    #text3 {
+        font-size: 45px;
+        width: 66%;
+        margin: 45px 0 0 306px;
+    }
+
+    h3 {
+        font-size: 3.75rem;
+    }
+
+    #back img {
+        width: 890px;
+        top: -187px
+    }
+
+    #back {
+        margin-top: 200px;
+    }
 }
