@@ -1,13 +1,34 @@
 body {
-    /* font-family: 'Overpass',
-        sans-serif; */
-    font-family: 'Ubuntu',
-        sans-serif;
+    /*font-family: 'Overpass',        sans-serif;
+    */
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     margin: 0;
     line-height: 2.5;
     background-color: rgb(255, 255, 255);
     text-transform: capitalize;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: hsl(353, 100%, 62%);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+#myBtn:hover {
+    background-color: #555;
 }
 
 #landing {
@@ -40,7 +61,7 @@ body {
 #sign {
     color: hsl(353, 100%, 62%);
     border-radius: 20px;
-    line-height: 0.5;
+
     text-align: center;
     background-color: rgba(255, 255, 255, 0.815);
     border: 2px white solid;
@@ -54,7 +75,7 @@ body {
 }
 
 #log {
-    line-height: 0.5;
+
     text-align: center;
     color: white;
     border-radius: 20px;
@@ -62,6 +83,41 @@ body {
 
     padding: 10px 30px;
     margin: 0 40px;
+}
+
+
+
+@media screen and (max-width:1990px) {
+    #bots {
+        margin-left: 24vw
+    }
+}
+
+@media screen and (max-width:1485px) {
+    #bots {
+        margin-left: 15vw
+    }
+}
+
+@media screen and (max-width:1253px) and (min-width:1080px) {
+    #bots {
+        margin-left: 0
+    }
+}
+
+@media screen and (max-width:1080px) and (min-width:1028px) {
+    #bots {
+        position: absolute;
+        right: 2vw
+    }
+}
+
+
+@media screen and (max-width:1027px) and (min-width:750px) {
+    #bots {
+        position: absolute;
+        right: 4vw
+    }
 }
 
 @media screen and (max-width:815px) and (min-width:768px) {
@@ -74,18 +130,6 @@ body {
         margin: 0 29px;
     }
 }
-
-@media screen and (max-width:1027px) and (min-width:929px) {
-    #sign {
-        margin: 0 -16px;
-    }
-
-    #log {
-
-        margin: 0 29px;
-    }
-}
-
 
 @media screen and (max-width:767px) {
     #log {
@@ -211,6 +255,7 @@ body {
     }
 }
 
+/* ============================================================== */
 #design h1 {
     text-align: center;
     margin: 50px;
@@ -277,6 +322,7 @@ body {
     }
 }
 
+/* ============================================================== */
 #back {
     height: 60vh;
     position: relative;
@@ -426,4 +472,103 @@ body {
     #back {
         margin-top: 200px;
     }
+}
+
+/* ==================================================== */
+#design2 h3 {
+    color: hsl(208, 49%, 24%);
+}
+
+#text4 {
+    width: 50vw;
+    display: inline-block;
+}
+
+
+
+#design2 {
+    min-height: 550px;
+    margin-top: 50px
+}
+
+.boxingg2 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 4px black
+}
+
+#design2 #image2 {
+    width: 40vw;
+    float: left;
+}
+
+
+@media screen and (max-width:920px) {
+    #design2 #image2 {
+        float: none;
+        width: 60vw;
+        display: block;
+        margin-left: 200px;
+    }
+
+    #text4 {
+        width: 80vw;
+        margin: 0 50px;
+    }
+
+}
+
+
+@media screen and (max-width:650px) {
+    #design2 #image2 {
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width:417px) {
+        #text4 {
+            width: 80vw;
+            margin: 0 10px;
+        }
+
+    }
+}
+
+/* ================================================================= */
+#footer {
+    margin: 0;
+}
+
+#text5 {
+    background-color: hsl(240, 10%, 16%);
+
+    font-size: 1.2rem;
+    border-radius: 0 120px 0 0;
+    -webkit-border-radius: 0 120px 0 0;
+    -moz-border-radius: 0 120px 0 0;
+    -ms-border-radius: 0 120px 0 0;
+    -o-border-radius: 0 120px 0 0;
+}
+
+#foot {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+#bloo {
+    font-size: 3rem;
+    color: white;
+}
+
+#text5 a {
+    text-decoration: none;
+    color: white;
+}
+
+#text5 a:hover {
+    text-decoration: underline
 }
