@@ -406,6 +406,11 @@ body {
         height: 50vh;
     }
 
+    #image2,
+    #image1 {
+        width: 50vw
+    }
+
     #text3 {
         width: 47vw;
         margin: 332px 94px 0 0;
@@ -429,6 +434,11 @@ body {
 
     #design #image1 {
         margin-left: 50px;
+    }
+
+    #text2,
+    #text4 {
+        width: 100%
     }
 }
 
