@@ -87,110 +87,6 @@ body {
 
 
 
-@media screen and (max-width:1990px) {
-    #bots {
-        margin-left: 24vw
-    }
-}
-
-@media screen and (max-width:1485px) {
-    #bots {
-        margin-left: 15vw
-    }
-}
-
-@media screen and (max-width:1253px) and (min-width:1080px) {
-    #bots {
-        margin-left: 0
-    }
-}
-
-@media screen and (max-width:1080px) and (min-width:1028px) {
-    #bots {
-        position: absolute;
-        right: 2vw
-    }
-}
-
-
-@media screen and (max-width:1027px) and (min-width:750px) {
-    #bots {
-        position: absolute;
-        right: 4vw
-    }
-}
-
-@media screen and (max-width:815px) and (min-width:768px) {
-    #sign {
-        margin: 0 -16px;
-    }
-
-    #log {
-
-        margin: 0 29px;
-    }
-}
-
-@media screen and (max-width:767px) {
-    #log {
-        line-height: 0.5;
-        text-align: center;
-        border-radius: 20px;
-        border: 2px white solid;
-        padding: 30px 60px;
-
-    }
-
-    #sign {
-        border-radius: 20px;
-        line-height: 0.5;
-        border: 2px white solid;
-        padding: 30px 60px;
-
-    }
-
-}
-
-@media screen and (max-width:515px) {
-    #log {
-        line-height: 0.5;
-        text-align: center;
-        border-radius: 20px;
-        border: 2px white solid;
-        padding: 18px 30px;
-
-    }
-
-    #sign {
-        border-radius: 20px;
-        line-height: 0.5;
-        border: 2px white solid;
-        padding: 18px 35px;
-
-    }
-
-}
-
-@media screen and (max-width:405px) {
-    #log {
-        line-height: 0.5;
-        text-align: center;
-        border-radius: 20px;
-        border: 2px white solid;
-        padding: 14px 18px;
-        margin: 10px 13px;
-    }
-
-    #sign {
-        border-radius: 20px;
-        line-height: 0.5;
-        border: 2px white solid;
-        padding: 14px 20px;
-        margin: 10px 13px;
-    }
-
-}
-
 
 
 #text {
@@ -234,27 +130,6 @@ body {
     color: white;
 }
 
-@media screen and (max-width:426px) {
-    #text a {
-        margin: 10px 3px;
-        padding: 10px 15px;
-
-    }
-
-}
-
-@media screen and (max-width:383px) {
-    #text a {
-        font-size: 15px;
-        margin: 10px 0;
-        padding: 10px 7px;
-    }
-
-    #text h1 {
-        font-size: 49px;
-    }
-}
-
 /* ============================================================== */
 #design h1 {
     text-align: center;
@@ -293,35 +168,6 @@ body {
     float: right;
 }
 
-@media screen and (max-width:920px) {
-    #design #image1 {
-        float: none;
-        width: 60vw;
-        display: block;
-        margin-left: 200px;
-    }
-
-    #text2 {
-        width: 80vw;
-        margin: 0 50px;
-    }
-
-}
-
-@media screen and (max-width:650px) {
-    #design #image1 {
-        margin-left: 50px;
-    }
-
-    @media screen and (max-width:417px) {
-        #text2 {
-            width: 80vw;
-            margin: 0 10px;
-        }
-
-    }
-}
-
 /* ============================================================== */
 #back {
     height: 60vh;
@@ -334,12 +180,6 @@ body {
     background-image: url('images/bg-pattern-circles.svg'), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
 
-#text3 {
-    color: white;
-    width: 47vw;
-    float: right;
-    margin: 110px 70px 0 0;
-}
 
 #text3 h3 {
     text-align: center;
@@ -350,76 +190,72 @@ body {
     top: -130px
 }
 
-@media screen and (max-width:1200px) {
-    #back img {
-        width: 40vw;
-        top: -130px
-    }
+/* ==================================================== */
+#design2 h3 {
+    color: hsl(208, 49%, 24%);
 }
 
-@media screen and (max-width:920px) {
-    #back {
-        margin-top: 75px;
-        height: 55vh;
-    }
-
-    #back img {
-        width: 40vw;
-        top: -80px
-    }
-
-    #text3 {
-        color: white;
-        width: 47vw;
-        float: right;
-        margin: 50px 40px 0 0;
-    }
-
+#text4 {
+    width: 50vw;
+    display: inline-block;
 }
 
-@media screen and (max-width:650px) {
-    #back {
-        margin-top: 75px;
-        height: 88vh;
-    }
 
-    #text3 {
-        width: 77vw;
 
-        margin: 329px 54px 0 0;
-    }
-
-    #back img {
-        width: 58vw;
-        top: -80px;
-        left: 100px;
-    }
+#design2 {
+    min-height: 550px;
+    margin-top: 50px
 }
 
-@media screen and (max-width:490px) {
-    #text3 {
-        width: 70vw;
-        margin: 253px 54px 0 0;
-    }
-
-    #back img {
-        width: 72vw;
-        top: -80px;
-        left: 34px;
-    }
+.boxingg2 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 4px black
 }
 
-@media screen and (max-width:344px) {
-    #text3 {
-        text-align: center;
-        margin: 164px 39px 0 0;
-    }
+#design2 #image2 {
+    width: 40vw;
+    float: left;
+}
 
-    #back img {
-        width: 72vw;
-        top: -80px;
-        left: 34px;
-    }
+/* ================================================================= */
+#footer {
+    margin: 0;
+}
+
+#text5 {
+    background-color: hsl(240, 10%, 16%);
+
+    font-size: 1.2rem;
+    border-radius: 0 120px 0 0;
+    -webkit-border-radius: 0 120px 0 0;
+    -moz-border-radius: 0 120px 0 0;
+    -ms-border-radius: 0 120px 0 0;
+    -o-border-radius: 0 120px 0 0;
+}
+
+#foot {
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+#bloo {
+    font-size: 3rem;
+    color: white;
+}
+
+#text5 a {
+    text-decoration: none;
+    color: white;
+}
+
+#text5 a:hover {
+    text-decoration: underline
 }
 
 @media screen and (min-width:2000px) {
@@ -474,101 +310,253 @@ body {
     }
 }
 
-/* ==================================================== */
-#design2 h3 {
-    color: hsl(208, 49%, 24%);
-}
-
-#text4 {
-    width: 50vw;
-    display: inline-block;
-}
-
-
-
-#design2 {
-    min-height: 550px;
-    margin-top: 50px
-}
-
-.boxingg2 {
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 1px 1px 4px black
-}
-
-#design2 #image2 {
-    width: 40vw;
-    float: left;
-}
-
-
-@media screen and (max-width:920px) {
-    #design2 #image2 {
-        float: none;
-        width: 60vw;
-        display: block;
-        margin-left: 200px;
+@media screen and (min-width:1920px) {
+    #back {
+        height: 27vh;
     }
 
-    #text4 {
-        width: 80vw;
-        margin: 0 50px;
+    #bots {
+        margin-left: 20vw;
     }
 
+    #text3 {
+        color: white;
+        width: 45vw;
+        position: relative;
+        top: 60px;
+        left: 800px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #back {
+        height: 17vh;
+    }
+
+    #bots {
+        margin-left: 12vw;
+    }
+
+    #text3 {
+        color: white;
+        width: 42vw;
+        float: right;
+        margin: 112px 28px 0 0;
+    }
+
+    #sing {
+        margin: 0
+    }
+
+    #log {
+        margin: 0 -30px;
+    }
+}
+
+@media screen and (min-width:1366px) {
+    #back {
+        height: 46vh;
+    }
 }
 
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:1080px) {
+    #back {
+        height: 24vh;
+    }
+
+    #bots {
+        margin-left: 5vw;
+    }
+
+    #text3 {
+        color: white;
+        width: 42vw;
+        float: right;
+        margin: 112px 28px 0 0;
+    }
+
+    #sing {
+        margin: 0
+    }
+
+    #log {
+        margin: 0 -30px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    #text3 {
+        width: 55vw;
+        margin: 73px 3px 0 0;
+    }
+
+    #bots {
+        margin-left: 11vw
+    }
+}
+
+@media screen and (max-width:750px) {
     #design2 #image2 {
         margin-left: 50px;
     }
 
-    @media screen and (max-width:417px) {
-        #text4 {
-            width: 80vw;
-            margin: 0 10px;
-        }
+    #back {
+        margin-top: 75px;
+        height: 50vh;
+    }
 
+    #text3 {
+        width: 47vw;
+        margin: 332px 94px 0 0;
+        width: 67vw;
+    }
+
+    #text a {
+        padding: 18px 30px;
+    }
+
+    #bots {
+        margin-left: 18vw
+    }
+
+
+    #back img {
+        width: 58vw;
+        top: -80px;
+        left: 100px;
+    }
+
+    #design #image1 {
+        margin-left: 50px;
     }
 }
 
-/* ================================================================= */
-#footer {
-    margin: 0;
+@media screen and (max-width:640px) {
+    #back {
+        margin-top: 75px;
+        height: 66vh;
+    }
+
+    #bots {
+        margin-left: 13vw
+    }
+
+    #text3 {
+        margin: 332px 94px 0 0;
+        width: 67vw;
+    }
+
 }
 
-#text5 {
-    background-color: hsl(240, 10%, 16%);
+@media screen and (max-width:540px) {
+    #back {
+        margin-top: 75px;
+        height: 63vh;
+    }
 
-    font-size: 1.2rem;
-    border-radius: 0 120px 0 0;
-    -webkit-border-radius: 0 120px 0 0;
-    -moz-border-radius: 0 120px 0 0;
-    -ms-border-radius: 0 120px 0 0;
-    -o-border-radius: 0 120px 0 0;
+    #bots {
+        margin-left: 6vw
+    }
+
+    #text4 {
+        margin: 0 15px;
+    }
+
+    #text2 {
+        margin: 0 15px;
+    }
+
+    #text3 {
+        width: 77vw;
+
+        margin: 285px 41px 0 0
+    }
+
 }
 
-#foot {
-    padding-top: 60px;
-    padding-left: 50px;
+@media screen and (max-width:480px) {
+    #design2 #image2 {
+        margin-left: 50px;
+    }
+
+    #text h1 {
+        font-size: 44px
+    }
+
+    #back {
+        margin-top: 75px;
+        height: 69vh;
+    }
+
+    #text3 {
+        width: 77vw;
+
+        margin: 255px 41px 0 0
+    }
+
+    #log,
+    #sign {
+        padding: 22px 40px;
+    }
+
+    #bots {
+        margin-left: 0
+    }
+
+    #back img {
+        width: 58vw;
+        top: -80px;
+        left: 100px;
+    }
+
+    #design #image1 {
+        margin-left: 50px;
+    }
+
 }
 
-#bloo {
-    font-size: 3rem;
-    color: white;
+@media screen and (max-width:414px) {
+    #text3 {
+        margin: 196px 23px 0 0;
+    }
+
 }
 
-#text5 a {
-    text-decoration: none;
-    color: white;
+@media screen and (max-width:360px) {
+    #text a {
+        font-size: 15px;
+        margin: 10px 0;
+        padding: 10px 7px;
+    }
+
+    #text h1 {
+        font-size: 49px;
+    }
+
+    #back {
+        height: 98vh;
+    }
 }
 
-#text5 a:hover {
-    text-decoration: underline
+
+@media screen and (max-width:320px) {
+    #text3 {
+        text-align: center;
+        margin: 164px 39px 0 0;
+    }
+
+    #back {
+        height: 108vh;
+    }
+
+    #log,
+    #sign {
+        padding: 15px 30px;
+    }
+
+    #back img {
+        left: 40px
+    }
+
 }
