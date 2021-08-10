@@ -35,10 +35,7 @@ body {
 
     background: url(images/bg-pattern-intro.svg), linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-position: center;
-
-    min-height: 30rem;
     background-size: cover;
-
     border-radius: 0 0 0 3rem;
     -webkit-border-radius: 0 0 0 3rem;
     -moz-border-radius: 0 0 0 3rem;
@@ -58,6 +55,10 @@ body {
     color: white;
 }
 
+#bots {
+    margin-left: 300px;
+}
+
 #sign {
     color: hsl(353, 100%, 62%);
     border-radius: 20px;
@@ -66,7 +67,6 @@ body {
     background-color: rgba(255, 255, 255, 0.815);
     border: 2px white solid;
     padding: 10px 30px;
-    margin: 0 17px;
 }
 
 #sign:hover {
@@ -82,19 +82,19 @@ body {
     border: 2px white solid;
 
     padding: 10px 30px;
-    margin: 0 40px;
+
 }
-
-
-
-
 
 #text {
     text-align: center;
     font-family: 'Overpass',
         sans-serif;
     color: white;
-    margin-top: 100px;
+    margin: 20px auto;
+}
+
+#buttons {
+    padding-bottom: 50px;
 }
 
 #text h1 {
@@ -106,7 +106,7 @@ body {
 #text a {
     margin: 10px 10px;
     border: 2px white solid;
-    padding: 10px 30px;
+    padding: 20px 30px;
     text-decoration: none;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -149,7 +149,7 @@ body {
 
 
 #design {
-    min-height: 800px;
+    margin-bottom: 100px;
 }
 
 .boxingg {
@@ -170,8 +170,9 @@ body {
 
 /* ============================================================== */
 #back {
-    height: 60vh;
+
     position: relative;
+    padding: 100px 0;
     border-radius: 0 15% 0 15%;
     -webkit-border-radius: 0 15% 0 15%;
     -moz-border-radius: 0 15% 0 15%;
@@ -180,9 +181,22 @@ body {
     background-image: url('images/bg-pattern-circles.svg'), linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
 }
 
+#art {
+    padding-right: 0;
+    padding-left: 0;
+}
 
-#text3 h3 {
+#text3 {
+    margin-left: 600px;
+    width: 50%;
+}
+
+#text3 h3,
+#text3 p {
     text-align: center;
+    color: white;
+
+
 }
 
 #back img {
@@ -203,8 +217,8 @@ body {
 
 
 #design2 {
-    min-height: 550px;
-    margin-top: 50px
+
+    margin-top: 100px
 }
 
 .boxingg2 {
@@ -225,7 +239,8 @@ body {
 
 /* ================================================================= */
 #footer {
-    margin: 0;
+    margin-top: 100px;
+    padding: 0;
 }
 
 #text5 {
@@ -242,6 +257,8 @@ body {
 #foot {
     padding-top: 60px;
     padding-left: 50px;
+    margin-right: 0;
+    text-align: center;
 }
 
 #bloo {
@@ -258,7 +275,225 @@ body {
     text-decoration: underline
 }
 
-@media screen and (min-width:2000px) {
+@media screen and (max-width:1400px) {
+    #bots {
+        margin-left: 180px;
+    }
+
+    #text3 {
+        margin-left: 530px;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    #bots {
+        margin-left: 75px;
+    }
+
+    #text3 {
+        margin-left: 530px;
+    }
+
+}
+
+@media screen and (max-width:1180px) {
+    #bots {
+        margin-left: 0;
+    }
+
+    #text3 {
+        margin-left: 480px;
+    }
+
+    #back img {
+        width: 40%;
+        top: -80px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #bots {
+        margin-left: 80px;
+    }
+
+    #log {
+        margin-right: 50px;
+    }
+
+    #text3 {
+        margin-left: 380px;
+    }
+
+    #back {
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    #bots {
+        margin-left: 15px;
+    }
+
+    #back {
+        padding: 30px 0;
+    }
+
+    #text3 {
+        margin-left: 350px;
+    }
+
+}
+
+@media screen and (max-width:770px) {
+
+
+    #design #image1,
+    #design2 #image2 {
+        width: 60vw;
+        float: none;
+        margin-left: 100px;
+    }
+
+    #text a {
+        padding: 18px 30px;
+    }
+
+
+    #back img {
+        width: 48%;
+        position: relative;
+    }
+
+    #text2,
+    #text4 {
+        width: 100%
+    }
+
+    #text3 {
+        margin: 0 auto;
+        width: 80%;
+        position: relative;
+        top: -100px;
+    }
+
+    #back img {
+        width: 70%;
+        left: 70px;
+    }
+
+    #bots {
+        margin-left: 180px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    #bots {
+        margin-left: 120px;
+    }
+}
+
+
+@media screen and (max-width:520px) {
+
+
+    #design #image1,
+    #design2 #image2 {
+        width: 60vw;
+        float: none;
+        margin-left: 100px;
+    }
+
+    #bots {
+        margin-left: 70px;
+    }
+
+    #text a {
+        padding: 18px 30px;
+    }
+
+    #foot {
+        padding-left: 0;
+    }
+
+    #back img {
+        width: 48%;
+        position: relative;
+    }
+
+    #text2,
+    #text4 {
+        width: 100%
+    }
+
+    #text3 {
+        margin: 0 auto;
+        width: 80%;
+        position: relative;
+        top: -100px;
+    }
+
+    #back img {
+        width: 90%;
+        left: 21px;
+        top: -100px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    #design #image1,
+    #design2 #image2 {
+        width: 70vw;
+        margin-left: 60px;
+    }
+
+    #bots {
+        margin-left: 30px;
+    }
+
+    #text a {
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (max-width:366px) {
+    #text a {
+        padding: 15px 15px;
+        font-size: 12px;
+    }
+
+    #bots {
+        margin-left: 10px;
+    }
+
+    #log {
+        margin-right: 10px;
+    }
+
+    #design #image1,
+    #design2 #image2 {
+        width: 70vw;
+        margin-left: 10px;
+    }
+
+    #design h1 {
+        margin: 20px 0;
+    }
+
+    #text h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #buttons {
+        width: 115%
+    }
+}
+
+/* @media screen and (min-width:2000px) {
     body {
         font-size: xx-large;
     }
@@ -308,8 +543,8 @@ body {
     #back {
         margin-top: 200px;
     }
-}
-
+} */
+/* 
 @media screen and (min-width:1920px) {
     #back {
         height: 27vh;
@@ -357,8 +592,32 @@ body {
     #back {
         height: 46vh;
     }
+
+    #bots {
+        margin-left: 12vw;
+    }
+
+    #text3 {
+        color: white;
+        width: 42vw;
+        float: right;
+        margin: 112px 28px 0 0;
+    }
+
+    #sing {
+        margin: 0
+    }
+
+    #log {
+        margin: 0 -30px;
+    }
 }
 
+@media screen and (max-width:1024px) {
+    #back {
+        height: 50vh;
+    }
+}
 
 @media screen and (max-width:1080px) {
     #back {
@@ -389,6 +648,18 @@ body {
     #text3 {
         width: 55vw;
         margin: 73px 3px 0 0;
+    }
+
+    #back {
+        margin-top: 140px;
+    }
+
+    #back img {
+        width: 42vw
+    }
+
+    #text3 {
+        margin: 30px 3px 0 0
     }
 
     #bots {
@@ -569,4 +840,4 @@ body {
         left: 40px
     }
 
-}
+} */
